@@ -1,13 +1,18 @@
 .authNavContainer {
-  font-size: 28px;
-  font-weight: 600;
-  font-style: inherit;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   display: flex;
   gap: 20px;
-  font-style: inherit;
 }
 
 .link {
   text-decoration: none;
-  color: inherit;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #007aff;
 }

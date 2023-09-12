@@ -1,26 +1,35 @@
-.logOutBtn {
-  border-radius: 4px;
-  padding: 10px 30px;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.logOutBtn:hover,
-.logOutBtn:focus {
-  background-color: rgb(17, 189, 55);
-  color: #fff;
-  transform: scale(1.1);
-  transition: all 250ms;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 .userMenuContainer {
   display: flex;
   align-items: center;
   gap: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .userName {
   font-size: 20px;
   font-weight: 600;
+  color: #333;
+}
+
+.logOutBtn {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  border-radius: 10px;
+  padding: 10px 30px;
+  border: none;
+  background-color: #f7f7f7;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.logOutBtn:hover,
+.logOutBtn:focus {
+  background-color: #007aff;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }

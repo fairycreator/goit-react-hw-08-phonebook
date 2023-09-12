@@ -1,44 +1,61 @@
-.form {
+.formContainer {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
   align-items: center;
+  justify-content: center;
+}
+
+.form {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .formLabel {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 20px;
-  font-weight: 700;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  gap: 20px;
+}
+
+.formLabel:hover,
+.formLabel:focus {
+  background-color: #f1f1f1;
 }
 
 .formInput {
-  width: 400px;
-  height: 35px;
-  border-radius: 4px;
-  border: none;
-  font-size: 20px;
-  font-weight: 600;
-  color: rgb(114, 114, 114);
-  padding: 5px 10px;
-  outline: transparent;
+  flex: 1;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
 }
+
 .addContactBtn {
-  border-radius: 4px;
-  padding: 10px 30px;
+  background-color: #ff3b30;
   border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
   cursor: pointer;
   font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin: 10px;
 }
 
 .addContactBtn:hover,
 .addContactBtn:focus {
-  background-color: rgb(17, 189, 55);
-  color: #fff;
-  transform: scale(1.1);
-  transition: all 250ms;
+  background-color: #d52d1f;
+  transform: scale(1.05);
 }

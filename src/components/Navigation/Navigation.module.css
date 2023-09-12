@@ -1,12 +1,27 @@
-.link {
-  font-size: 24px;
-  text-decoration: none;
-  color: inherit;
-  font-weight: 900;
-}
-
 .navigationContainer {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 10px 0;
+}
+
+.link {
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link span {
+  color: #515151;
+  font-weight: 500;
+}
+
+.link:hover,
+.link:focus {
+  color: #007aff;
+  transform: scale(1.15);
 }
