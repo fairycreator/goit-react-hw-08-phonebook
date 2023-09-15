@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 .appContainer {
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(242, 242, 242, 0.9) 100%
-  );
+  background: linear-gradient(to right, #007aff, #0cebeb);
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .contactsTitle,
@@ -16,8 +13,8 @@
   margin-right: auto;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  text-shadow: none;
-  color: #333;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .contactsTitle {
@@ -26,7 +23,7 @@
 
 .loader {
   margin-top: 20px;
-  color: #007aff;
+  color: white;
   margin-left: auto;
   margin-right: auto;
 }

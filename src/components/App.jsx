@@ -1,3 +1,10 @@
+import {
+  ChakraProvider,
+  Box,
+  CSSReset,
+  ColorModeProvider,
+  extendTheme,
+} from '@chakra-ui/react';
 import { lazy, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
@@ -8,6 +15,7 @@ import { useAuth } from 'hooks';
 import { refreshUser } from 'redux/auth/authOperations';
 import styles from './App.module.css';
 
+// Lazy loaded components
 const HomePage = lazy(() => import('../pages/Home.js'));
 const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));
@@ -22,43 +30,45 @@ export const App = () => {
   }, [dispatch]);
 
   return (
-    <div className={styles.appContainer}>
-      {isRefreshing ? (
-        <b>Refreshing user...</b>
-      ) : (
-        <Routes>
-          <Route path="/" element={<SharedLayout />}>
-            <Route index element={<HomePage />} />
-            <Route
-              path="/register"
-              element={
-                <RestrictedRoute
-                  redirectTo="/contacts"
-                  component={<RegisterPage />}
-                />
-              }
-            />
-            <Route
-              path="/login"
-              element={
-                <RestrictedRoute
-                  redirectTo="/contacts"
-                  component={<LoginPage />}
-                />
-              }
-            />
-            <Route
-              path="/contacts"
-              element={
-                <PrivateRoute
-                  redirectTo="/login"
-                  component={<ContactsPage />}
-                />
-              }
-            />
-          </Route>
-        </Routes>
-      )}
-    </div>
+    <ChakraProvider>
+      <Box className={styles.appContainer}>
+        {isRefreshing ? (
+          <div className={styles.loader}>Refreshing user...</div>
+        ) : (
+          <Routes>
+            <Route path="/" element={<SharedLayout />}>
+              <Route index element={<HomePage />} />
+              <Route
+                path="/register"
+                element={
+                  <RestrictedRoute
+                    redirectTo="/contacts"
+                    component={<RegisterPage />}
+                  />
+                }
+              />
+              <Route
+                path="/login"
+                element={
+                  <RestrictedRoute
+                    redirectTo="/contacts"
+                    component={<LoginPage />}
+                  />
+                }
+              />
+              <Route
+                path="/contacts"
+                element={
+                  <PrivateRoute
+                    redirectTo="/login"
+                    component={<ContactsPage />}
+                  />
+                }
+              />
+            </Route>
+          </Routes>
+        )}
+      </Box>
+    </ChakraProvider>
   );
 };
