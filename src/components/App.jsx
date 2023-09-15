@@ -1,10 +1,4 @@
-import {
-  ChakraProvider,
-  Box,
-  CSSReset,
-  ColorModeProvider,
-  extendTheme,
-} from '@chakra-ui/react';
+import { ChakraProvider, Box } from '@chakra-ui/react';
 import { lazy, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';

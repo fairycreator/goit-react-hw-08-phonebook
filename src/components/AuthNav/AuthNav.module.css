@@ -12,6 +12,7 @@
 .link {
   text-decoration: none;
   background-image: linear-gradient(to right, #007aff, #0cebeb);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   padding: 10px 20px;
