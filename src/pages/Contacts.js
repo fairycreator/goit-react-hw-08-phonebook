@@ -18,7 +18,7 @@ export default function Contacts() {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'start',
+        alignItems: 'center',
       }}
     >
       <ContactForm />

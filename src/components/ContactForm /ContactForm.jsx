@@ -13,6 +13,7 @@ export const ContactForm = () => {
   const [number, setNumber] = useState('');
 
   const handleSubmit = e => {
+    console.log('Add Contact button clicked!');
     e.preventDefault();
     if (contacts.some(({ name }) => name === contactName)) {
       window.alert(`${contactName} is already in your contacts`);
@@ -48,7 +49,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <di className={styles.formContainer}>
+    <div className={styles.formContainer}>
       <form onSubmit={handleSubmit} className={styles.form}>
         <label className={styles.formLabel}>
           Name
@@ -77,10 +78,11 @@ export const ContactForm = () => {
             required
           />
         </label>
+
+        <button className={styles.addContactBtn} type="submit">
+          Add contact
+        </button>
       </form>
-      <button className={styles.addContactBtn} type="submit">
-        Add contact
-      </button>
-    </di>
+    </div>
   );
 };

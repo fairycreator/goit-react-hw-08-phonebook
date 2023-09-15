@@ -3,16 +3,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .form {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
     'Arial', sans-serif;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -28,6 +30,8 @@
   border-radius: 10px;
   transition: background-color 0.3s ease;
   gap: 20px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .formLabel:hover,
@@ -40,6 +44,7 @@
   font-size: 18px;
   font-weight: 500;
   color: #333;
+  width: 100%;
 }
 
 .addContactBtn {
@@ -47,11 +52,13 @@
   border: none;
   border-radius: 10px;
   color: #fff;
-  padding: 10px;
+  padding: 10px 20px;
   cursor: pointer;
   font-weight: 600;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   margin: 10px;
+  width: 50%;
+  max-width: 500px;
 }
 
 .addContactBtn:hover,
