@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+.sharedLayoutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .sharedLayoutBar {
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
   background-color: #f7f7f7;
   border-radius: 16px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);

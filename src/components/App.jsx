@@ -9,7 +9,6 @@ import { useAuth } from 'hooks';
 import { refreshUser } from 'redux/auth/authOperations';
 import styles from './App.module.css';
 
-// Lazy loaded components
 const HomePage = lazy(() => import('../pages/Home.js'));
 const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));

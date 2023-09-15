@@ -6,12 +6,14 @@ import styles from './SharedLayout.module.css';
 
 export default function SharedLayout() {
   return (
-    <div className={styles.sharedLayoutBar}>
-      <AppBar />
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
-      <Toaster position="top-right" reverseOrder={false} />
+    <div className={styles.sharedLayoutContainer}>
+      <div className={styles.sharedLayoutBar}>
+        <AppBar />
+        <Suspense fallback={null}>
+          <Outlet />
+        </Suspense>
+        <Toaster position="top-right" reverseOrder={false} />
+      </div>
     </div>
   );
 }
