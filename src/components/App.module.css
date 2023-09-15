@@ -4,7 +4,7 @@
   background: linear-gradient(to right, #007aff, #0cebeb);
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  /* color: white; */
 }
 
 .contactsTitle,
