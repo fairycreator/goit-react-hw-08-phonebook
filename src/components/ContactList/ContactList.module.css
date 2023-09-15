@@ -1,36 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .contactList {
-  margin-top: 30px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 20px;
+  align-items: center;
+  gap: 1.25rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contactItem {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contactListBtn {
   cursor: pointer;
-  border-radius: 4px;
-  padding: 5px 20px;
+  border-radius: 16px;
+  padding: 0.5rem 1.25rem;
   border: none;
   font-weight: 600;
+  background-color: #007aff;
+  color: #ffffff;
+  transition: all 250ms;
 }
 
 .contactListBtn:hover,
 .contactListBtn:focus {
-  background-color: rgb(255, 2, 2);
-  color: #fff;
+  background-color: #005bb5;
   transform: scale(1.1);
-  transition: all 250ms;
 }
 
 .contactText {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
