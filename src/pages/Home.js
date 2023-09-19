@@ -24,7 +24,7 @@ export default function Home() {
       <h2
         style={{
           textAlign: 'center',
-          fontSize: '22px',
+          fontSize: '24px',
           color: '#666',
           maxWidth: '800px',
           margin: 'auto',
